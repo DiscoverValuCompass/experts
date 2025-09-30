@@ -15,6 +15,11 @@ defaults:
     values:
       layout: "default"
 
+collections:
+  experts:
+    output: true
+    permalink: /experts/:name/
+
 search_enabled: true
 
 url: https://discovervalucompass.github.io

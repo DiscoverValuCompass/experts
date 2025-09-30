@@ -1,0 +1,56 @@
+---
+# This front matter tells Jekyll to process the file as SCSS.
+---
+
+/* Bring in the Just the Docs theme styles first */
+@import "just-the-docs";
+
+/* -----------------------------------
+   Custom overrides and additions
+   ----------------------------------- */
+
+/* Expert headshot image */
+.headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Category pills (designations) */
+.pill {
+  display: inline-block;
+  background-color: #eef6ff;  /* light blue background */
+  color: #004080;             /* dark blue text */
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem 0.25rem 0;
+  border-radius: 999px;       /* fully rounded */
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Buttons (override Just the Docs defaults if you want stronger style) */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 6px;
+  background-color: #004080;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.button.secondary {
+  background-color: #888;
+}
+
+/* Sections spacing */
+.expert-hero,
+.expert-snapshot,
+.expert-expertise,
+.expert-bio,
+.expert-cta {
+  margin-bottom: 2rem;
+}

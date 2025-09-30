@@ -1,0 +1,44 @@
+<!-- _layouts/expert.html -->
+---
+layout: default
+---
+
+<section class="expert-hero">
+  <img class="headshot" src="{{ page.headshot | default: '/assets/images/placeholder-headshot.jpg' }}" alt="{{ page.name }}">
+  <div>
+    <h1>{{ page.name }}</h1>
+    <p class="title">{{ page.title }}</p>
+    <p class="location">{{ page.location }}</p>
+    <div class="categories">
+      {% for cat in page.categories %}
+        <span class="pill">{{ cat }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="expert-snapshot">
+  <h2>Credentials</h2>
+  <p>{{ page.credentials }}</p>
+  {% if page.experience %}<p><strong>Experience:</strong> {{ page.experience }}</p>{% endif %}
+  {% if page.industry_focus %}<p><strong>Industries:</strong> {{ page.industry_focus }}</p>{% endif %}
+</section>
+
+<section class="expert-expertise">
+  <h2>Expertise</h2>
+  <ul>
+    {% for tag in page.expertise %}
+      <li>{{ tag }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="expert-bio">
+  <h2>About {{ page.first_name | default: page.name }}</h2>
+  {{ content }}
+</section>
+
+<section class="expert-cta">
+  <a class="button" href="{{ page.intro_link | default: '/experts/request-introduction/' }}">Request an Introduction</a>
+  {% if page.linkedin %}<a class="button secondary" href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+</section>
