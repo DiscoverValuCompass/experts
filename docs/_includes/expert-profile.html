@@ -1,3 +1,4 @@
+<!-- /docs/_includes/expert-profile.html -->
 <div class="expert-card">
   <div class="expert-hero">
     {% if page.headshot %}
@@ -17,12 +18,12 @@
     </div>
   </div>
 
-  {% if page.credentials or page.experience or page.industry_focus %}
+  {% if page.credentials %}
     <h2>Credentials</h2>
-    {% if page.credentials %}<p>{{ page.credentials }}</p>{% endif %}
-    {% if page.experience %}<p><strong>Experience:</strong> {{ page.experience }}</p>{% endif %}
-    {% if page.industry_focus %}<p><strong>Industries:</strong> {{ page.industry_focus }}</p>{% endif %}
+    <p>{{ page.credentials }}</p>
   {% endif %}
+  {% if page.experience %}<p><strong>Experience:</strong> {{ page.experience }}</p>{% endif %}
+  {% if page.industry_focus %}<p><strong>Industries:</strong> {{ page.industry_focus }}</p>{% endif %}
 
   {% if page.expertise %}
     <h2>Expertise</h2>
@@ -33,13 +34,16 @@
     </ul>
   {% endif %}
 
-  {% if content %}
+  {% if page.content %}
     <h2>About {{ page.first_name | default: page.name }}</h2>
-    {{ content }}
+    {{ page.content }}
   {% endif %}
 
   <p class="expert-cta">
     <a class="button" href="{{ page.intro_link | default: '/contact/' | relative_url }}">Request an Introduction</a>
-    {% if page.linkedin %} <a class="button secondary" href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> {% endif %}
+    {% if page.linkedin %}
+      <a class="button secondary" href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    {% endif %}
   </p>
 </div>
+
