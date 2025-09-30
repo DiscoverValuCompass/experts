@@ -104,3 +104,10 @@ a:hover, a:focus { color: var(--vc-blue-dark); }
 
 .purpose-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
 .purpose-grid h3 { margin-top: 0; margin-bottom: .5rem; }
+
+.nav-footer {
+  font-size: 0.8rem;
+  color: #6b7b94;
+  margin: 1.5rem 0;
+  display: block;
+}
