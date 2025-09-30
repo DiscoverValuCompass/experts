@@ -1,0 +1,45 @@
+<div class="expert-card">
+  <div class="expert-hero">
+    {% if page.headshot %}
+      <img class="headshot" src="{{ page.headshot | relative_url }}" alt="{{ page.name }}">
+    {% endif %}
+    <div>
+      <h1 class="expert-name">{{ page.name }}</h1>
+      {% if page.title %}<p class="expert-title">{{ page.title }}</p>{% endif %}
+      {% if page.location %}<p class="expert-location">{{ page.location }}</p>{% endif %}
+      {% if page.categories %}
+        <div class="categories">
+          {% for cat in page.categories %}
+            <span class="pill">{{ cat }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if page.credentials or page.experience or page.industry_focus %}
+    <h2>Credentials</h2>
+    {% if page.credentials %}<p>{{ page.credentials }}</p>{% endif %}
+    {% if page.experience %}<p><strong>Experience:</strong> {{ page.experience }}</p>{% endif %}
+    {% if page.industry_focus %}<p><strong>Industries:</strong> {{ page.industry_focus }}</p>{% endif %}
+  {% endif %}
+
+  {% if page.expertise %}
+    <h2>Expertise</h2>
+    <ul>
+      {% for tag in page.expertise %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if content %}
+    <h2>About {{ page.first_name | default: page.name }}</h2>
+    {{ content }}
+  {% endif %}
+
+  <p class="expert-cta">
+    <a class="button" href="{{ page.intro_link | default: '/contact/' | relative_url }}">Request an Introduction</a>
+    {% if page.linkedin %} <a class="button secondary" href="{{ page.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> {% endif %}
+  </p>
+</div>
