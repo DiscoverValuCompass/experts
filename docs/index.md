@@ -16,6 +16,21 @@ nav_order: 1
 > **Tip:** Start typing in the search bar above to instantly filter experts by name, credential, or specialty.
 {: .tip }
 
+## Featured Experts
+
+<div class="featured-experts">
+  <article class="featured-expert">
+    <h3><a href="{{ '/experts/jane-doe/' | relative_url }}">Jane Doe, CPA</a></h3>
+    <p>Richmond-based succession and tax strategist helping family businesses pair growth with generational planning.</p>
+    <a class="text-link" href="{{ '/experts/jane-doe/' | relative_url }}">View profile →</a>
+  </article>
+  <article class="featured-expert">
+    <h3><a href="{{ '/experts/john-doe/' | relative_url }}">John Doe, CFA, CAIA</a></h3>
+    <p>Lynchburg portfolio strategist guiding founders through liquidity events and disciplined post-sale investment policies.</p>
+    <a class="text-link" href="{{ '/experts/john-doe/' | relative_url }}">View profile →</a>
+  </article>
+</div>
+
 ## Areas of Expertise
 
 Browse by discipline to jump directly to the specialists you need.
@@ -66,21 +81,6 @@ Browse by discipline to jump directly to the specialists you need.
     <p>Build post-liquidity investment strategies that preserve and grow family capital.</p>
     <p class="category-links"><a href="{{ '/internal/wealth-management-aum/' | relative_url }}">Internal team</a> · <a href="{{ '/external/wealth-management-aum/' | relative_url }}">External partners</a></p>
   </div>
-</div>
-
-## Featured Experts
-
-<div class="featured-experts">
-  <article class="featured-expert">
-    <h3><a href="{{ '/experts/jane-doe/' | relative_url }}">Jane Doe, CPA</a></h3>
-    <p>Richmond-based succession and tax strategist helping family businesses pair growth with generational planning.</p>
-    <a class="text-link" href="{{ '/experts/jane-doe/' | relative_url }}">View profile →</a>
-  </article>
-  <article class="featured-expert">
-    <h3><a href="{{ '/experts/john-doe/' | relative_url }}">John Doe, CFA, CAIA</a></h3>
-    <p>Lynchburg portfolio strategist guiding founders through liquidity events and disciplined post-sale investment policies.</p>
-    <a class="text-link" href="{{ '/experts/john-doe/' | relative_url }}">View profile →</a>
-  </article>
 </div>
 
 ## Why This Directory Exists
