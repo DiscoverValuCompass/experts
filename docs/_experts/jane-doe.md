@@ -13,9 +13,8 @@ expertise:
   - Tax Strategy
   - Succession Planning
 permalink: /experts/jane-doe/
+bio: |-
+  Jane has spent over two decades guiding privately held businesses through transitions, mergers, and estate planning challenges. She specializes in helping family-owned companies balance growth with long-term generational planning.
 ---
 
 {% include expert-profile.html %}
-
-Jane has spent over two decades guiding privately held businesses through transitions, mergers, and estate planning challenges. She specializes in helping family-owned companies balance growth with long-term generational planning.
-

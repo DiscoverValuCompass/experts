@@ -8,7 +8,6 @@
       <h1 class="expert-name">{{ page.name }}</h1>
       {% if page.title %}<p class="expert-title">{{ page.title }}</p>{% endif %}
       {% if page.location %}<p class="expert-location">{{ page.location }}</p>{% endif %}
-
       {% if page.categories %}
         <div class="expert-cats">
           {% for cat in page.categories %}
@@ -47,9 +46,9 @@
     </ul>
   {% endif %}
 
-  {% if page.content %}
+  {% if page.bio %}
     <h2>About {{ page.first_name | default: page.name }}</h2>
-    {{ page.content }}
+    {{ page.bio | markdownify }}
   {% endif %}
 
   <p class="expert-cta">
