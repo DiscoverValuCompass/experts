@@ -1,0 +1,36 @@
+title: ValuCompass Experts
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+just_the_docs:
+  color_scheme: light
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""      # everything under /docs (your build root)
+      type: "pages"
+    values:
+      layout: "default"
+
+search_enabled: true
+
+url: https://discovervalucompass.github.io
+baseurl: /experts
+
+logo: /assets/images/blue_logo.png
+
+#adding kramdown-parser to enable admonitions
+callouts_level: quiet
+callouts:
+  note:
+    title: Note
+    color: blue
+  tip:
+    title: Tip
+    color: green
+  warning:
+    title: Warning
+    color: red
