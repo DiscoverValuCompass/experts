@@ -39,3 +39,22 @@
   font-size: .9rem;
 }
 .button.secondary { background: #888; }
+
+/* Brand colors */
+:root {
+  --vc-blue: #0f4c81;
+  --vc-blue-dark: #0a3058;
+}
+
+/* Override Just the Docs default purple accents */
+a, a:visited { color: var(--vc-blue); }
+a:hover, a:focus { color: var(--vc-blue-dark); }
+.site-title, .site-title:visited { color: var(--vc-blue); }
+.site-title:hover, .site-title:focus { color: var(--vc-blue-dark); }
+.site-nav__link, .site-nav__link:visited,
+.nav-list .nav-list-item > a,
+.nav-list .nav-list-item > a:visited { color: var(--vc-blue); }
+.site-nav__link:hover, .site-nav__link:focus,
+.nav-list .nav-list-item > a:hover,
+.nav-list .nav-list-item > a:focus { color: var(--vc-blue-dark); }
+
